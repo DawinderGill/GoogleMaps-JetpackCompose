@@ -1,4 +1,4 @@
-package com.dawinder.googlemaps_jetpackcompose
+package com.dawinder.googlemaps_jetpackcompose.ui.activities
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -10,6 +10,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.dawinder.googlemaps_jetpackcompose.ui.composables.MainScreen
 import com.dawinder.googlemaps_jetpackcompose.ui.theme.GoogleMapsJetpackComposeTheme
 
 class MainActivity : ComponentActivity() {
@@ -18,29 +19,18 @@ class MainActivity : ComponentActivity() {
         setContent {
             GoogleMapsJetpackComposeTheme {
                 // A surface container using the 'background' color from the theme
-                Surface(
-                    modifier = Modifier.fillMaxSize(),
-                    color = MaterialTheme.colorScheme.background
-                ) {
-                    Greeting("Android")
+                Surface {
+                    MainScreen()
                 }
             }
         }
     }
 }
 
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
-
 @Preview(showBackground = true)
 @Composable
 fun GreetingPreview() {
     GoogleMapsJetpackComposeTheme {
-        Greeting("Android")
+        MainScreen()
     }
 }

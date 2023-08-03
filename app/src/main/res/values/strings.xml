@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">GoogleMaps-JetpackCompose</string>
+    <string name="main_fab_rotation">Main Fab Rotation</string>
+    <string name="main_fab_button">Main Fab Button</string>
+    <string name="float_icon">Float Button Icon</string>
 </resources>

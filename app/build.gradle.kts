@@ -1,4 +1,3 @@
-@Suppress("DSL_SCOPE_VIOLATION") // TODO: Remove once KTIJ-19369 is fixed
 plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.kotlinAndroid)
@@ -51,20 +50,28 @@ android {
 }
 
 dependencies {
-
-    implementation(libs.core.ktx)
-    implementation(libs.lifecycle.runtime.ktx)
-    implementation(libs.activity.compose)
+    // Jetpack Compose Platform
     implementation(platform(libs.compose.bom))
-    implementation(libs.ui)
-    implementation(libs.ui.graphics)
-    implementation(libs.ui.tooling.preview)
-    implementation(libs.material3)
-    testImplementation(libs.junit)
-    androidTestImplementation(libs.androidx.test.ext.junit)
-    androidTestImplementation(libs.espresso.core)
     androidTestImplementation(platform(libs.compose.bom))
-    androidTestImplementation(libs.ui.test.junit4)
-    debugImplementation(libs.ui.tooling)
-    debugImplementation(libs.ui.test.manifest)
+
+    // Jetpack Compose Libraries with BOM version
+    implementation(libs.bundles.compose)
+
+    // Other Jetpack Compose Libraries
+    implementation(libs.bundles.otherCompose)
+
+    // Core Libraries
+    implementation(libs.core.ktx)
+
+    // Google Maps Libraries
+    implementation(libs.maps.compose)
+
+    //JUnit Test Libraries
+    testImplementation(libs.junit)
+
+    //Android Test Libraries
+    androidTestImplementation(libs.bundles.androidTest)
+
+    //Debug Libraries
+    debugImplementation(libs.bundles.debug)
 }
