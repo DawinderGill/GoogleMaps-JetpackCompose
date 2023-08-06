@@ -9,6 +9,10 @@ lifecycle-runtime-ktx = "2.6.1"
 activity-compose = "1.7.2"
 compose-bom = "2023.06.01"
 maps-compose = "2.12.0"
+mapsplatformPlugin = "2.0.1"
+play-services-maps = "18.1.0"
+appcompat = "1.6.1"
+constraintlayout = "2.1.4"
 
 [libraries]
 core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "core-ktx" }
@@ -27,13 +31,18 @@ ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
 material3 = { group = "androidx.compose.material3", name = "material3" }
 material-icons-extended = { group = "androidx.compose.material", name = "material-icons-extended" }
 maps-compose = { group = "com.google.maps.android", name = "maps-compose", version.ref = "maps-compose" }
+play-services-maps = { group = "com.google.android.gms", name = "play-services-maps", version.ref = "play-services-maps" }
+appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }
 kotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+mapsplatformPlugin = { id = "com.google.android.libraries.mapsplatform.secrets-gradle-plugin", version.ref = "mapsplatformPlugin" }
 
 [bundles]
 compose = ["ui", "ui-graphics", "ui-tooling-preview", "material3", "material-icons-extended"]
 otherCompose = ["lifecycle-runtime-ktx", "activity-compose"]
 androidTest = ["androidx-test-ext-junit", "espresso-core", "ui-test-junit4"]
 debug = ["ui-tooling", "ui-test-manifest"]
+googleMaps = ["maps-compose", "play-services-maps"]

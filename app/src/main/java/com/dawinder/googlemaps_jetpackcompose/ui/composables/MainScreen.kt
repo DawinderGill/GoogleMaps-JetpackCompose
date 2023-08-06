@@ -1,6 +1,7 @@
 package com.dawinder.googlemaps_jetpackcompose.ui.composables
 
 import android.annotation.SuppressLint
+import android.graphics.Bitmap.Config
 import android.widget.Toast
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -23,6 +24,10 @@ import com.dawinder.googlemaps_jetpackcompose.ui.fab.FabButtonMain
 import com.dawinder.googlemaps_jetpackcompose.ui.fab.FabButtonSub
 import com.dawinder.googlemaps_jetpackcompose.ui.fab.MultiFloatingActionButton
 import com.dawinder.googlemaps_jetpackcompose.R
+import com.google.android.gms.maps.model.CameraPosition
+import com.google.android.gms.maps.model.LatLng
+import com.google.maps.android.compose.GoogleMap
+import com.google.maps.android.compose.rememberCameraPositionState
 
 /**
  * Composable function to display the main screen of the application.
@@ -66,7 +71,19 @@ fun MainScreen() {
             horizontalAlignment = Alignment.CenterHorizontally,
             verticalArrangement = Arrangement.Center
         ) {
-            Text(text = stringResource(id = R.string.app_name))
+            MapScreen()
         }
     }
+}
+
+@Composable
+fun MapScreen() {
+    val edmonton = LatLng(53.5345934095359, -113.50004285476653)
+    val cameraPositionState = rememberCameraPositionState {
+        position = CameraPosition.fromLatLngZoom(edmonton, 10f)
+    }
+    GoogleMap(
+        modifier = Modifier.fillMaxSize(),
+        cameraPositionState = cameraPositionState
+    )
 }

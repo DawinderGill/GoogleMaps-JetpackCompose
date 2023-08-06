@@ -1,6 +1,13 @@
+import java.util.Properties
+
+val localProperties = Properties().apply {
+    load(rootProject.file("local.properties").inputStream())
+}
+
 plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.kotlinAndroid)
+    alias(libs.plugins.mapsplatformPlugin)
 }
 
 android {
@@ -38,6 +45,7 @@ android {
     }
     buildFeatures {
         compose = true
+        viewBinding = true
     }
     composeOptions {
         kotlinCompilerExtensionVersion = "1.4.3"
@@ -52,6 +60,9 @@ android {
 dependencies {
     // Jetpack Compose Platform
     implementation(platform(libs.compose.bom))
+    implementation(libs.play.services.maps)
+    implementation(libs.appcompat)
+    implementation(libs.constraintlayout)
     androidTestImplementation(platform(libs.compose.bom))
 
     // Jetpack Compose Libraries with BOM version
@@ -64,7 +75,7 @@ dependencies {
     implementation(libs.core.ktx)
 
     // Google Maps Libraries
-    implementation(libs.maps.compose)
+    implementation(libs.bundles.googleMaps)
 
     //JUnit Test Libraries
     testImplementation(libs.junit)

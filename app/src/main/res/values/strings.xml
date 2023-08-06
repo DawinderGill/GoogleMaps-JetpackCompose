@@ -3,4 +3,5 @@
     <string name="main_fab_rotation">Main Fab Rotation</string>
     <string name="main_fab_button">Main Fab Button</string>
     <string name="float_icon">Float Button Icon</string>
+    <string name="title_activity_maps">MapsActivity</string>
 </resources>
