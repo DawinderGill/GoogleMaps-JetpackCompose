@@ -4,4 +4,6 @@
     <string name="main_fab_button">Main Fab Button</string>
     <string name="float_icon">Float Button Icon</string>
     <string name="title_activity_maps">MapsActivity</string>
+    <string name="map_simple">Map Simple</string>
+    <string name="map_markers">Map Markers</string>
 </resources>

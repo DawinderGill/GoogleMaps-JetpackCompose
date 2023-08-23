@@ -7,7 +7,8 @@ import androidx.compose.ui.graphics.vector.ImageVector
  *
  * @param iconRes The [ImageVector] representing the icon to be displayed on the FAB item.
  * @param label The label or text associated with the FAB item.
+ * @param onClick Action to perform on click on the FAB item.
  *
  * @constructor Creates a new instance of [FabButtonItem].
  */
-data class FabButtonItem(val iconRes: ImageVector, val label: String)
+data class FabButtonItem(val iconRes: ImageVector, val label: String, val onClick: () -> Unit)

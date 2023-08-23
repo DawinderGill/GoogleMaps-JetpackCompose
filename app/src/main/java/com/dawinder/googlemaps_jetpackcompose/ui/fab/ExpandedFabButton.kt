@@ -40,7 +40,6 @@ import com.dawinder.googlemaps_jetpackcompose.ui.theme.typography
  * @param fabState The [MutableState] representing the current state of the Multi-FAB, whether it is expanded or collapsed.
  * @param fabIcon The [FabButtonMain] representing the main FAB with an icon and optional rotation.
  * @param fabOption The [FabButtonSub] representing the customization options for the sub-items.
- * @param onFabItemClicked The callback function to handle click events on the sub-items.
  * @param stateChanged The optional callback function to notify when the state of the Multi-FAB changes (expanded or collapsed).
  */
 @Composable
@@ -50,7 +49,6 @@ fun MultiFloatingActionButton(
     fabState: MutableState<FabButtonState> = rememberMultiFabState(),
     fabIcon: FabButtonMain,
     fabOption: FabButtonSub = FabButtonSub(),
-    onFabItemClicked: (fabItem: FabButtonItem) -> Unit,
     stateChanged: (fabState: FabButtonState) -> Unit = {}
 ) {
     // Animation for rotating the main FAB icon based on its state (expanded or collapsed)
@@ -82,8 +80,7 @@ fun MultiFloatingActionButton(
                     // Composable to display each individual sub-item
                     MiniFabItem(
                         item = items[index],
-                        fabOption = fabOption,
-                        onFabItemClicked = onFabItemClicked
+                        fabOption = fabOption
                     )
                 }
                 item {} // Empty item to provide spacing at the end of the list
@@ -115,13 +112,11 @@ fun MultiFloatingActionButton(
  *
  * @param item The [FabButtonItem] representing the sub-item with an icon and label.
  * @param fabOption The [FabButtonSub] representing the customization options for the sub-items.
- * @param onFabItemClicked The callback function to handle click events on the sub-items.
  */
 @Composable
 fun MiniFabItem(
     item: FabButtonItem,
     fabOption: FabButtonSub,
-    onFabItemClicked: (item: FabButtonItem) -> Unit
 ) {
     Row(
         modifier = Modifier
@@ -143,7 +138,7 @@ fun MiniFabItem(
 
         // FloatingActionButton representing the sub-item
         FloatingActionButton(
-            onClick = { onFabItemClicked(item) },
+            onClick = item.onClick,
             modifier = Modifier.size(40.dp),
             containerColor = fabOption.backgroundTint,
             contentColor = fabOption.iconTint

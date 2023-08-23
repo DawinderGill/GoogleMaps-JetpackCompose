@@ -19,7 +19,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             GoogleMapsJetpackComposeTheme {
                 // A surface container using the 'background' color from the theme
-                Surface {
+                Surface(modifier = Modifier.fillMaxSize()) {
                     MainScreen()
                 }
             }
