@@ -5,5 +5,17 @@
     <string name="float_icon">Float Button Icon</string>
     <string name="title_activity_maps">MapsActivity</string>
     <string name="map_simple">Map Simple</string>
-    <string name="map_markers">Map Markers</string>
+    <string name="map_marker">Map Marker</string>
+    <string name="map_multiple_marker">Map Multiple Marker</string>
+    <string name="map_custom_marker">Map Custom Marker</string>
+    <string name="map_marker_cluster">Map Marker Cluster</string>
+    <string name="canada_place">Canada Place</string>
+    <string name="government_office">Government Office</string>
+    <string name="canada_place_des">A picture of Edmonton Canada Place</string>
+    <string name="edmonton">Edmonton</string>
+    <string name="edmonton_expo_centre">Edmonton EXPO Centre</string>
+    <string name="royal_alexandra_hospital">Royal Alexandra Hospital</string>
+    <string name="ics_district">ICE District</string>
+    <string name="art_gallery">Art Gallery</string>
+    <string name="nait_collage">NAIT Collage</string>
 </resources>

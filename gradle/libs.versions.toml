@@ -32,6 +32,7 @@ material3 = { group = "androidx.compose.material3", name = "material3" }
 material-icons-extended = { group = "androidx.compose.material", name = "material-icons-extended" }
 maps-compose = { group = "com.google.maps.android", name = "maps-compose", version.ref = "maps-compose" }
 play-services-maps = { group = "com.google.android.gms", name = "play-services-maps", version.ref = "play-services-maps" }
+maps-utils = { group = "com.google.maps.android", name = "maps-compose-utils", version.ref = "maps-compose" }
 appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
 constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
 
@@ -45,4 +46,4 @@ compose = ["ui", "ui-graphics", "ui-tooling-preview", "material3", "material-ico
 otherCompose = ["lifecycle-runtime-ktx", "activity-compose"]
 androidTest = ["androidx-test-ext-junit", "espresso-core", "ui-test-junit4"]
 debug = ["ui-tooling", "ui-test-manifest"]
-googleMaps = ["maps-compose", "play-services-maps"]
+googleMaps = ["maps-compose", "play-services-maps", "maps-utils"]
