@@ -9,6 +9,7 @@
     <string name="map_multiple_marker">Map Multiple Marker</string>
     <string name="map_custom_marker">Map Custom Marker</string>
     <string name="map_marker_cluster">Map Marker Cluster</string>
+    <string name="map_scale_bar">Map Scale Bar</string>
     <string name="canada_place">Canada Place</string>
     <string name="government_office">Government Office</string>
     <string name="canada_place_des">A picture of Edmonton Canada Place</string>
