@@ -14,6 +14,14 @@ import com.google.maps.android.compose.Marker
 import com.google.maps.android.compose.MarkerState
 import com.google.maps.android.compose.rememberCameraPositionState
 
+/**
+ * Composable function for displaying a map with multiple individual markers.
+ *
+ * This function displays a Google Map with multiple individual markers representing various points of
+ * interest in Edmonton, Canada. Each marker is associated with a specific location, title, and snippet
+ * providing information about the point of interest. Users can interact with the map and view details
+ * of individual markers when clicked.
+ */
 @Composable
 fun MapMultipleMarker() {
     val edmontonCanadaPlace = LatLng(53.542763503552784, -113.48666486116335)

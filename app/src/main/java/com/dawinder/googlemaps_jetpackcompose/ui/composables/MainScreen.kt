@@ -32,9 +32,20 @@ import com.dawinder.googlemaps_jetpackcompose.ui.fab.MultiFloatingActionButton
 import com.dawinder.googlemaps_jetpackcompose.utils.MapOptions
 
 /**
- * Composable function to display the main screen of the application.
- * The main screen contains a Scaffold with a Multi-Floating Action Button (Multi-FAB) and a Text component.
- * When the Multi-FAB is expanded, it shows sub-items as individual Floating Action Buttons (FABs).
+ * Composable function representing the main screen of the application.
+ *
+ * This function defines the layout and behavior of the main screen, which includes a Scaffold with a
+ * Multi-Floating Action Button (Multi-FAB) for selecting different map options. The selected map
+ * option determines which map-related content is displayed on the screen.
+ *
+ * @see MapOptions Enum representing different map options that can be selected.
+ * @see MapSimple Composable function for displaying a simple map.
+ * @see MapMarker Composable function for displaying map markers.
+ * @see MapCustomMarker Composable function for displaying custom map markers.
+ * @see MapMultipleMarker Composable function for displaying multiple map markers.
+ * @see MapMarkerCluster Composable function for displaying clustered map markers.
+ * @see MapScaleBar Composable function for displaying a map scale bar.
+ * @see MapStreetView Composable function for displaying a street view map.
  */
 @Composable
 fun MainScreen() {

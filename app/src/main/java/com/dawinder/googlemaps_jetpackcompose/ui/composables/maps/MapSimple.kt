@@ -9,6 +9,12 @@ import com.google.maps.android.compose.GoogleMap
 import com.google.maps.android.compose.MapUiSettings
 import com.google.maps.android.compose.rememberCameraPositionState
 
+/**
+ * Composable function for displaying a simple Google Map.
+ *
+ * This function displays a basic Google Map centered on a specific location (Edmonton, Canada) with a
+ * predefined zoom level. The map includes default user interface settings, such as pan and zoom controls.
+ */
 @Composable
 fun MapSimple() {
     val edmonton = LatLng(53.5345934095359, -113.50004285476653)

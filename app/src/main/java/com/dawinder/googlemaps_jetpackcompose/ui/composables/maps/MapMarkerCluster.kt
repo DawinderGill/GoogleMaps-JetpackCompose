@@ -1,3 +1,5 @@
+@file:OptIn(MapsComposeExperimentalApi::class)
+
 package com.dawinder.googlemaps_jetpackcompose.ui.composables.maps
 
 import androidx.compose.foundation.layout.fillMaxSize
@@ -11,9 +13,17 @@ import com.google.android.gms.maps.model.LatLng
 import com.google.android.gms.maps.model.LatLngBounds
 import com.google.maps.android.compose.GoogleMap
 import com.google.maps.android.compose.MapUiSettings
+import com.google.maps.android.compose.MapsComposeExperimentalApi
 import com.google.maps.android.compose.clustering.Clustering
 import com.google.maps.android.compose.rememberCameraPositionState
 
+/**
+ * Composable function for displaying a map with clustered markers.
+ *
+ * This function displays a Google Map with clustered markers representing multiple points of interest
+ * in Edmonton, Canada. It groups nearby markers into clusters for improved visualization when the map
+ * is zoomed out. Users can interact with the map and view individual markers and their details when clicked.
+ */
 @Composable
 fun MapMarkerCluster() {
     val edmontonCanadaPlace = LatLng(53.542763503552784, -113.48666486116335)

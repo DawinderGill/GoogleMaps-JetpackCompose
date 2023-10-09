@@ -15,6 +15,14 @@ import com.google.maps.android.compose.rememberCameraPositionState
 import com.google.maps.android.compose.widgets.DisappearingScaleBar
 import com.google.maps.android.compose.widgets.ScaleBar
 
+/**
+ * Composable function for displaying a map with a scale bar.
+ *
+ * This function displays a Google Map with a scale bar, providing users with a visual reference to
+ * estimate distances on the map. The scale bar is visible at all times, and there is also a
+ * disappearing scale bar that disappears after a few seconds. The map is centered on a specific
+ * location (Edmonton, Canada) with a predefined zoom level.
+ */
 @Composable
 fun MapScaleBar() {
     Box(Modifier.fillMaxSize()) {

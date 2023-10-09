@@ -26,6 +26,14 @@ import com.google.maps.android.compose.MarkerInfoWindowContent
 import com.google.maps.android.compose.MarkerState
 import com.google.maps.android.compose.rememberCameraPositionState
 
+/**
+ * Composable function for displaying a map with a custom marker and info window content.
+ *
+ * This function displays a Google Map with a custom marker at a specific location (Edmonton, Canada
+ * Place) and an associated info window. The info window contains an image, title, and snippet
+ * describing the Canada Place location. Users can interact with the map and view the custom marker's
+ * information when clicked.
+ */
 @Composable
 fun MapCustomMarker() {
     val edmontonCanadaPlace = LatLng(53.542763503552784, -113.48666486116335)

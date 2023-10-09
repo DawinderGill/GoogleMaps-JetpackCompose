@@ -13,6 +13,13 @@ import com.google.maps.android.compose.Marker
 import com.google.maps.android.compose.MarkerState
 import com.google.maps.android.compose.rememberCameraPositionState
 
+/**
+ * Composable function for displaying a map with a standard marker.
+ *
+ * This function displays a Google Map with a standard marker at a specific location (Edmonton,
+ * Canada Place). The marker represents a point of interest and provides basic information such as
+ * a title and snippet. Users can interact with the map and view marker details when clicked.
+ */
 @Composable
 fun MapMarker() {
     val edmontonCanadaPlace = LatLng(53.542763503552784, -113.48666486116335)
