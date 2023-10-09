@@ -22,6 +22,7 @@ fun MapScaleBar() {
         val cameraPositionState = rememberCameraPositionState {
             position = CameraPosition.fromLatLngZoom(edmonton, 10.5f)
         }
+
         GoogleMap(
             modifier = Modifier.fillMaxSize(),
             cameraPositionState = cameraPositionState,

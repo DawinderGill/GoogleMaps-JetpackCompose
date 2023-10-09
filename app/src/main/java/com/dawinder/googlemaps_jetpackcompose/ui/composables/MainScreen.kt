@@ -1,5 +1,3 @@
-@file:OptIn(MapsComposeExperimentalApi::class)
-
 package com.dawinder.googlemaps_jetpackcompose.ui.composables
 
 import androidx.compose.foundation.layout.Arrangement
@@ -26,12 +24,12 @@ import com.dawinder.googlemaps_jetpackcompose.ui.composables.maps.MapMarkerClust
 import com.dawinder.googlemaps_jetpackcompose.ui.composables.maps.MapMultipleMarker
 import com.dawinder.googlemaps_jetpackcompose.ui.composables.maps.MapScaleBar
 import com.dawinder.googlemaps_jetpackcompose.ui.composables.maps.MapSimple
+import com.dawinder.googlemaps_jetpackcompose.ui.composables.maps.MapStreetView
 import com.dawinder.googlemaps_jetpackcompose.ui.fab.FabButtonItem
 import com.dawinder.googlemaps_jetpackcompose.ui.fab.FabButtonMain
 import com.dawinder.googlemaps_jetpackcompose.ui.fab.FabButtonSub
 import com.dawinder.googlemaps_jetpackcompose.ui.fab.MultiFloatingActionButton
 import com.dawinder.googlemaps_jetpackcompose.utils.MapOptions
-import com.google.maps.android.compose.MapsComposeExperimentalApi
 
 /**
  * Composable function to display the main screen of the application.
@@ -81,6 +79,12 @@ fun MainScreen() {
                     label = stringResource(R.string.map_scale_bar)
                 ) {
                     selectedMapOption = MapOptions.MAP_SCALE_BAR
+                },
+                FabButtonItem(
+                    iconRes = Icons.Filled.AddAlert,
+                    label = stringResource(R.string.map_street_view)
+                ) {
+                    selectedMapOption = MapOptions.MAP_STREET_VIEW
                 }
             ),
             fabIcon = FabButtonMain(),
@@ -101,6 +105,7 @@ fun MainScreen() {
                 MapOptions.MAP_MULTIPLE_MARKER -> MapMultipleMarker()
                 MapOptions.MAP_MARKER_CLUSTER -> MapMarkerCluster()
                 MapOptions.MAP_SCALE_BAR -> MapScaleBar()
+                MapOptions.MAP_STREET_VIEW -> MapStreetView()
             }
         }
     })
