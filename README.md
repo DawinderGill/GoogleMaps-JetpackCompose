@@ -14,7 +14,7 @@ Explore the dynamic capabilities of [Jetpack Compose](https://www.googleadservic
 
 This project serves as a valuable resource for developers diving into Jetpack Compose, offering practical examples of incorporating mapping features seamlessly. Whether you're building a location-based app or simply exploring the possibilities of Jetpack Compose, this showcase provides insights and code snippets to accelerate your development journey.
 
-You can read the step-by-step guide in my [medium]() story.
+You can read the step-by-step guide in my [medium](https://medium.com/@dawinderapps/jetpack-compose-meets-google-maps-magic-5f432937ab21) story.
 
 ## 🔐 Key Features
 - __Google Maps Integration__: Effortlessly incorporate Google Maps into your Jetpack Compose project, providing a rich and interactive mapping experience.
