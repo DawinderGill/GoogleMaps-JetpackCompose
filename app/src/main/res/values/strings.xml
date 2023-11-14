@@ -7,7 +7,7 @@
     <string name="map_simple">Map Simple</string>
     <string name="map_marker">Map Marker</string>
     <string name="map_multiple_marker">Map Multiple Marker</string>
-    <string name="map_custom_marker">Map Custom Marker</string>
+    <string name="map_custom_info_window">Map Custom Info Window</string>
     <string name="map_marker_cluster">Map Marker Cluster</string>
     <string name="map_scale_bar">Map Scale Bar</string>
     <string name="map_street_view">Map Street View</string>
