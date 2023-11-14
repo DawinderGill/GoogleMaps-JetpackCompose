@@ -35,7 +35,7 @@ import com.google.maps.android.compose.rememberCameraPositionState
  * information when clicked.
  */
 @Composable
-fun MapCustomMarker() {
+fun MapCustomInfoWindow() {
     val edmontonCanadaPlace = LatLng(53.542763503552784, -113.48666486116335)
     val cameraPositionState = rememberCameraPositionState {
         position = CameraPosition.fromLatLngZoom(edmontonCanadaPlace, 13f)
