@@ -32,17 +32,13 @@ Android Studio verison used : ``Android Studio Hedgehog | 2023.1.1 Canary 11``
 
 ## 🖼️ Demo Screens
 
-|Overview|Map Simple View|
-|-|-|
-| <img src="screenshots/sample_overview.png" width="250">|<img src="screenshots/map_simple.png" width="250"> |
+|Overview|Map Simple View|Map Marker|
+|-|-|-|
+| <img src="screenshots/sample_overview.png" width="250">|<img src="screenshots/map_simple.png" width="250"> |<img src="screenshots/map_marker.png" width="250">|
 
-|Map Marker|Map Custom Info Window|
-|-|-|
-| <img src="screenshots/map_marker.png" width="250">|<img src="screenshots/map_custom_info_window.png" width="250"> |
-
-|Map Multiple Marker|Map Marker Cluster|
-|-|-|
-| <img src="screenshots/map_multiple_markers.png" width="250">|<img src="screenshots/map_cluster.png" width="250"> |
+|Map Custom Info Window|Map Multiple Marker|Map Marker Cluster|
+|-|-|-|
+|<img src="screenshots/map_custom_info_window.png" width="250"> |<img src="screenshots/map_multiple_markers.png" width="250">|<img src="screenshots/map_cluster.png" width="250"> |
 
 |Map Scale Bar|
 |-|
