@@ -9,5 +9,5 @@ package com.dawinder.googlemaps_jetpackcompose.utils
  * markers, a map scale bar, or a street view.
  */
 enum class MapOptions {
-    MAP_SIMPLE, MAP_MARKER, MAP_CUSTOM_MARKER, MAP_MULTIPLE_MARKER, MAP_MARKER_CLUSTER, MAP_SCALE_BAR, MAP_STREET_VIEW
+    MAP_SIMPLE, MAP_MARKER, MAP_CUSTOM_INFO_WINDOW, MAP_MULTIPLE_MARKER, MAP_MARKER_CLUSTER, MAP_SCALE_BAR, MAP_STREET_VIEW
 }
