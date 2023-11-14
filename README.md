@@ -47,7 +47,7 @@ Android Studio verison used : ``Android Studio Hedgehog | 2023.1.1 Canary 11``
 ## ⚙️ How to Run
 1. Import this repository
 2. Get a [Maps API key](https://developers.google.com/maps/documentation/android-sdk/get-api-key)
-3. Go to `local.properties` and add `MAPS_API_KEY==YOUR_KEY`
+3. Goto `local.properties` and add `MAPS_API_KEY==YOUR_KEY`
 4. Build and Run
 
 ## 💰 Bonus Knowledge
