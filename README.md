@@ -32,25 +32,21 @@ Android Studio verison used : ``Android Studio Hedgehog | 2023.1.1 Canary 11``
 
 ## 🖼️ Demo Screens
 
-|Overview|
-|-|
-| <img src="screenshots/sample_overview.png" width="250">|
+|Overview|Map Simple View|
+|-|-|
+| <img src="screenshots/sample_overview.png" width="250">|<img src="screenshots/map_simple.png" width="250"> |
 
 |Map Marker|Map Custom Info Window|
 |-|-|
-| <img src="screenshots/map_marker.png" width="400">|<img src="screenshots/map_custom_info_window.png" width="700"> |
+| <img src="screenshots/map_marker.png" width="250">|<img src="screenshots/map_custom_info_window.png" width="250"> |
 
-|Folding Device Closed<br>( Screen Size : Compact)<br>(< 600 dp)|Folding Device Opened<br>( Screen Size : Medium)<br>(600 - 840 dp) |
+|Map Multiple Marker|Map Marker Cluster|
 |-|-|
-| <img src="screenshots/Fold_Medium_Closed.png" width="250">|<img src="screenshots/Fold_Medium_Opened.png" width="500"> |
+| <img src="screenshots/map_multiple_markers.png" width="250">|<img src="screenshots/map_cluster.png" width="250"> |
 
-|Folding Device Portrait Closed<br>( Screen Size : Medium)<br>(600 - 840 dp)|Folding Device Portrait Opened<br>( Screen Size : Medium)<br>(600 - 840 dp) |
-|-|-|
-| <img src="screenshots/Fold_Expand_Portrait_Closed.png" width="500">|<img src="screenshots/Fold_Expand Portrait_Opened.png" width="500"> |
-
-|Folding Device Landscape Closed<br>( Screen Size : Compact)<br>(< 600 dp)|Folding Device Landscape Opened<br>( Screen Size : Expanded)<br>(> 840 dp) |
-|-|-|
-| <img src="screenshots/Fold_Expand_Landscape_Closed.png" width="350">|<img src="screenshots/Fold_Expand_Landscape_Opened.png" width="700"> |
+|Map Scale Bar|
+|-|
+| <img src="screenshots/map_scale_bar.png" width="250">|
 
 
 ## 💰 Bonus Knowledge
